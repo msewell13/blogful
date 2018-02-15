@@ -1,0 +1,13 @@
+{% import 'macros.html' as macros %}
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Delete Entry</h1>
+<h2>Are you sure you would like to delete {{ entry.title }}</h2>
+
+<form role="form" method="POST" >
+	{{ form.csrf_token }}
+  	<button type="submit" class="btn btn-default">Delete</button>
+</form>
+
+{% endblock %}

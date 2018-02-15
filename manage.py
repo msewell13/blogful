@@ -9,6 +9,7 @@ manager = Manager(app)
 @manager.command
 def run():
 	port = int(os.environ.get('PORT', 8080))
+	app.config.update(DEBUG=True, SECRET_KEY='ksdfjpoqwur839oiefpoiejf-983eiojeoifjweqiofj3qor')
 	app.run(host='0.0.0.0', port=port)
 
 @manager.command
