@@ -5,6 +5,9 @@
             <li>
                 {{ entry.datetime | dateformat("%d/%m/%y") }}
             </li>
+            <li>
+                {{ entry.author.name }}
+            </li>
         </ul>
     </div>
     <div class="col-md-10">
