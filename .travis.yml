@@ -1,7 +1,7 @@
 language: python
 python:
     - "3.6"
-install: python3 -m pipenv install --dev
+install: pipenv install --dev
 env:
     - CONFIG_PATH=blog.config.TravisConfig
 before_script:
