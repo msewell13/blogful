@@ -1,27 +1,20 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
-
-flask = "*"
-sqlalchemy = "*"
-flask-login = "*"
-flask-script = "*"
-flask-migrate = "*"
+Flask = "*"
+SQLAlchemy = "*"
+Flask-Login = "*"
+Flask-Script = "*"
+Flask-Migrate = "*"
 mistune = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
 splinter = "*"
 
-
 [dev-packages]
 
-
-
 [requires]
-
 python_version = "3.6"
