@@ -17,9 +17,9 @@ def entries(page=1):
 	except ValueError:
 		paginate_by = 10
 
-	if int(limit) > 50:
+	if paginate_by > 50:
 		paginate_by = 50
-	elif int(limit) == 0:
+	elif paginate_by == 0:
 		paginate_by = 1
 
 
